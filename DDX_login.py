@@ -32,8 +32,8 @@ def login_ddx(url,value_A,value_B,value_C):
     driver.refresh()
 
     # 点击个人中心
-    WebDriverWait(driver, 10).until(EC.visibility_of_element_located((MobileBy.XPATH, '//*[contains(text(),"个人中心")]')))
-    driver.find_element_by_xpath('//*[contains(text(),"个人中心")]').click()
+    WebDriverWait(driver, 10).until(EC.visibility_of_element_located((MobileBy.XPATH, '//span[text()="个人中心"]')))
+    driver.find_element_by_xpath('//span[text()="个人中心"]').click()
     time.sleep(2)
 
     #点击淘宝授权
